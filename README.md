@@ -1,4 +1,8 @@
-# serverless-api
+# AWS API Gateway
+
+## Author: Keelen Fisher
+
+## [Deployed Link](https://4p5q0jweq9.execute-api.us-west-1.amazonaws.com/Lab18People/people)
 
 ## Feature Tasks & Requirements
 
@@ -48,13 +52,24 @@ Document the data and program flow for your API, including the mapping of Routes
 
 - What are the routes?
 
-***Create***
-***Read***
-***Update***
-***Delete***
+  - ***Create***
+  - ***Read***
+  - ***Update***
+  - ***Delete***
 
 - What inputs do they require?
 Each require a json object within the Request Body
 
 - What output do they return?
 Returns object with id, name, and number.
+
+### Credits
+
+- Collaborated with:
+
+  - Stephanie Hill
+  - Brandon Pitts
+  - Luis Rosales
+  - Tyler Main
+  - Junyoung Son
+  - Stephen Martinez
