@@ -22,7 +22,7 @@ exports.handler = async (event) => {
 
 
   // Plan b from lecture
-  let people = {id, name, phone}
+  let people = {id, name, number}
   console.log('checking the people--------', people);
 
   const response = {statusCode: null, body: null};
