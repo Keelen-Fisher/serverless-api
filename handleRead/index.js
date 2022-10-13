@@ -8,12 +8,12 @@ const dynamoose = require('dynamoose');
 const peopleSchema = new dynamoose.Schema({
   id: String,
   name: String,
-  number: String
+  number: String,
 });
 
 // create a model
 
-const peopleModel = new dynamoose.Schema('people-table', peopleSchema);
+const peopleModel = dynamoose.model('people-table', peopleSchema);
 
 exports.handler = async (event) => {
     // TODO implement
@@ -33,4 +33,5 @@ exports.handler = async (event) => {
     }
     return response;
 };
+
 
