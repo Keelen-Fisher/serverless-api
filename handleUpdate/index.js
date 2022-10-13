@@ -10,11 +10,11 @@ const peopleSchema = new dynamoose.Schema({
   number: String,
 })
 
-// Model delete
+// Model update
 const peopleModel = dynamoose.model('people-table', peopleSchema);
 
 exports.handler = async (event) => {
-  console.log('delete Check---------', event.body);
+  console.log('update Check---------', event.body);
 
   // extracting from the body
   let parsedBody = JSON.parse(event.body);
@@ -29,7 +29,7 @@ exports.handler = async (event) => {
 
   try
   {
-    let newPeople = await peopleModel.delete(people);
+    let newPeople = await peopleModel.update(people);
     response.statusCode = 200;
     response.body = JSON.stringify(newPeople);
   }
