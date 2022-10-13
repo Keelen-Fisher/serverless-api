@@ -6,7 +6,7 @@ Create a single resource REST API using a domain model of your choosing, constru
 
 - Database: DynamoDB
   - 1 Table required
-  
+
 - Routing: API Gateway
   - POST
     - /people - Given a JSON body, inserts a record into the database
@@ -46,7 +46,15 @@ Provide a UML diagram showcasing the architecture of your API
 
 Document the data and program flow for your API, including the mapping of Routes and Functions, as well as the flow of data.
 
-- What is the root URL to your API?
 - What are the routes?
+
+***Create***
+***Read***
+***Update***
+***Delete***
+
 - What inputs do they require?
+Each require a json object within the Request Body
+
 - What output do they return?
+Returns object with id, name, and number.
